@@ -1,0 +1,172 @@
+---
+name: CacheFlow AI
+colors:
+  surface: '#f7f9fb'
+  surface-dim: '#d8dadc'
+  surface-bright: '#f7f9fb'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f2f4f6'
+  surface-container: '#eceef0'
+  surface-container-high: '#e6e8ea'
+  surface-container-highest: '#e0e3e5'
+  on-surface: '#191c1e'
+  on-surface-variant: '#464554'
+  inverse-surface: '#2d3133'
+  inverse-on-surface: '#eff1f3'
+  outline: '#767586'
+  outline-variant: '#c7c4d7'
+  surface-tint: '#494bd6'
+  primary: '#4648d4'
+  on-primary: '#ffffff'
+  primary-container: '#6063ee'
+  on-primary-container: '#fffbff'
+  inverse-primary: '#c0c1ff'
+  secondary: '#0058be'
+  on-secondary: '#ffffff'
+  secondary-container: '#2170e4'
+  on-secondary-container: '#fefcff'
+  tertiary: '#4d5b83'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#66739d'
+  on-tertiary-container: '#fefcff'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#e1e0ff'
+  primary-fixed-dim: '#c0c1ff'
+  on-primary-fixed: '#07006c'
+  on-primary-fixed-variant: '#2f2ebe'
+  secondary-fixed: '#d8e2ff'
+  secondary-fixed-dim: '#adc6ff'
+  on-secondary-fixed: '#001a42'
+  on-secondary-fixed-variant: '#004395'
+  tertiary-fixed: '#dbe1ff'
+  tertiary-fixed-dim: '#b8c5f3'
+  on-tertiary-fixed: '#0a193e'
+  on-tertiary-fixed-variant: '#38456c'
+  background: '#f7f9fb'
+  on-background: '#191c1e'
+  surface-variant: '#e0e3e5'
+typography:
+  headline-xl:
+    fontFamily: Inter
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.025em
+  headline-lg:
+    fontFamily: Inter
+    fontSize: 30px
+    fontWeight: '600'
+    lineHeight: 38px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Inter
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-md:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.02em
+  code-md:
+    fontFamily: JetBrains Mono, monospace
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  margin: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system is engineered for a developer-focused SaaS platform. The brand personality is precise, intelligent, and relentlessly efficient, evoking a sense of absolute reliability and cutting-edge performance. The aesthetic bridges the gap between utilitarian functionality and modern developer tooling, relying on crisp visual hierarchy, high-contrast states for code readability, and a clean, unobtrusive interface that keeps the focus squarely on data and workflows.
+
+## Colors
+
+The palette is anchored by clean white and ultra-light gray backgrounds (`#F8FAFC`), providing an expansive, distraction-free canvas for complex data visualizations and telemetry. Vibrant violet (`#6366F1`) and energetic blue (`#3B82F6`) serve as the primary and secondary accents, denoting interactivity, primary actions, and system status indicators. Deep midnight slate (`#05153A`) commands high-contrast text and structural borders, ensuring optimal legibility across dense telemetry feeds and monitoring dashboards.
+
+## Typography
+
+Typography establishes an uncompromising, systematic rhythm optimized for technical users. Inter drives the core interface with precise tracking on large headers and clean anti-aliasing at smaller scale. Monospaced typographic roles (utilizing JetBrains Mono) are reserved strictly for code snippets, cache keys, CLI outputs, and JSON payloads. Scale down headline sizes gracefully on mobile viewports to prevent wrapping anomalies.
+
+## Layout & Spacing
+
+A responsive 12-column fluid grid system governs the workspace, pairing 24px gutters with dynamic outer margins that scale from 16px on mobile devices to 48px on ultra-wide desktop monitors. Spacing scales leverage a strict 4px/8px incremental rhythm, ensuring component padding and spatial relationships maintain geometric harmony. Dashboard telemetry panels and log streams reflow into single-column stacking rules below 768px viewports.
+
+## Elevation & Depth
+
+Visual hierarchy is conveyed through a combination of subtle surface-container tonal layers and low-contrast outlines. Dashboard cards and floating toolbars use crisp, multi-layer ambient shadows combined with ghost borders (`1px solid rgba(5, 21, 58, 0.08)`) to establish clear z-index stratification without visual noise. Interactive elements elevate on hover via micro-transitions and intensified shadow diffusion.
+
+## Shapes
+
+The design system employs a modern, friendly-yet-technical roundedness level (`rounded-2`). Standard UI components feature a base 0.5rem corner radius, scaling up to 1rem (`rounded-lg`) for container cards and modals, and 1.5rem (`rounded-xl`) for featured hero elements and prominent callouts. This softens the utilitarian density of developer tools without sacrificing structural precision.
+
+## Components
+
+### Buttons
+Primary actions utilize the vibrant violet accent (`#6366F1`) with crisp text contrast and rounded-lg corners. Secondary actions rely on ghost or outlined styles featuring slate borders. Destructive actions trigger high-visibility alert states. All buttons include clear focus rings for keyboard navigation.
+
+### Chips & Tags
+Compact metadata indicators used for cache statuses, tags, and environment flags. Built with soft tinted backgrounds and matching text weights to categorize telemetry data at a glance.
+
+### Input Fields & Search
+Optimized for rapid data entry and query construction. Features high-contrast borders, clear focus states driven by the primary accent, and integrated prefix/suffix slots for icons or keyboard shortcut indicators.
+
+### Cards & Dashboards
+Modern container cards utilizing subtle borders, soft ambient shadows, and rounded-xl corners. Designed to house real-time charts, metric readouts, and configuration panels cleanly within the grid.
+
+### Lists & Tables
+Data-dense tables featuring alternating row contrasts, sticky headers for long metric logs, and inline code blocks for identifier hashes and endpoints.
+
+### Checkboxes & Radios
+Clean, minimal selection controls with precise geometric hit areas, transitioning smoothly to primary accent fills upon selection.
+
+### Additional Components
+- **Code Editors / Terminal Panels:** Dark-themed embedded blocks with syntax highlighting and copy-to-clipboard utilities.
+- **Metric Gauges / Sparklines:** Inline data visualization components for tracking hit ratios and latency trends.
+- **API Key Manager:** Masked input groups with single-click regeneration and validation states.

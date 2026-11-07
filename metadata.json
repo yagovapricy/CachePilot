@@ -1,0 +1,6 @@
+{
+  "name": "CacheFlow AI",
+  "description": "High-performance developer-first intelligent edge caching, real-time telemetry, cache rule orchestration, and latency analytics platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
